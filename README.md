@@ -24,6 +24,8 @@ LiveDiaries offers the following features:
 ## 📁 Project Structure (Current)
 LIVEDIARIES/
 │
+├── .next/
+├── node_modules/
 ├── src/
 │   └── app/
 │       ├── fonts/
@@ -39,6 +41,7 @@ LIVEDIARIES/
 ├── LICENSE
 ├── next-env.d.ts
 ├── next.config.mjs
+├── package-lock.json
 ├── package.json
 ├── postcss.config.js
 ├── README.md
