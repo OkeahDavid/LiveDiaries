@@ -22,6 +22,7 @@ LiveDiaries offers the following features:
 - React
 
 ## 📁 Project Structure (Current)
+```
 LIVEDIARIES/
 │
 ├── .next/
@@ -47,7 +48,7 @@ LIVEDIARIES/
 ├── README.md
 ├── tailwind.config.ts
 └── tsconfig.json
-
+```
 ## 🚀 Getting Started
 
 1. Clone the repository:
