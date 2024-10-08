@@ -8,10 +8,6 @@ LiveDiaries offers the following features:
 - A welcoming home screen
 - Searchable book list
 - Favorite book marking
-- Dedicated screen for viewing favorite books
-- Settings screen for future enhancements
-- About Us, Legal, and License information pages
-- PDF viewer functionality
 - Diary entry capabilities
 
 ## 🛠 Tech Stack
