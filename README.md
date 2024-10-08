@@ -83,4 +83,4 @@ The project uses a combination of CSS Modules (`page.module.css`) and Tailwind C
 
 ## 📄 License
 
-This project is licensed under the terms found in the LICENSE file.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
