@@ -7,29 +7,40 @@ import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 text-foreground z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 text-gray-900 dark:text-white z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0 flex items-center">
-            <Link href="/">
-              <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">LiveDiaries</span>
-            </Link>
-          </div>
+        <div className="grid grid-cols-3 items-center h-16">
+          {/* Left Column: Logo */}
           <div className="flex items-center">
-            <Link href="/" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
-              Home
-            </Link>
-            <Link href="/" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
-              Download
-            </Link>
-            <Link href="/books" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
-              About
-            </Link>
-            <Link href="/diary" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
-              Contact
+            <Link href="/">
+              <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                LiveDiaries
+              </span>
             </Link>
           </div>
-          <DarkModeToggle />
+
+          {/* Center Column: Navigation Links */}
+          <div className="flex justify-center">
+            <div className="flex items-center space-x-6">
+              <Link href="/" className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400">
+                Home
+              </Link>
+              <Link href="/download" className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400">
+                Download
+              </Link>
+              <Link href="/about" className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400">
+                About
+              </Link>
+              <Link href="/contact" className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400">
+                Contact
+              </Link>
+            </div>
+          </div>
+
+          {/* Right Column: Dark Mode Toggle */}
+          <div className="flex justify-end">
+            <DarkModeToggle />
+          </div>
         </div>
       </div>
     </nav>
