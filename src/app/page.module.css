@@ -24,7 +24,7 @@
   }
   
   .highlight {
-    color: #0070f3;
+    color: #4869E1;
   }
   
   .description {
@@ -57,8 +57,8 @@
   .card:hover,
   .card:focus,
   .card:active {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: #4869E1;
+    border-color: #4869E1;
   }
   
   .card h2 {
@@ -76,7 +76,7 @@
     margin-top: 2rem;
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
-    background-color: #0070f3;
+    background-color: #4869E1;
     color: white;
     border: none;
     border-radius: 5px;
