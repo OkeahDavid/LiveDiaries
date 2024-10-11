@@ -72,13 +72,13 @@ export default function DownloadPage() {
 
         <div className={`${styles.grid} mt-8`}>
           <div className={`${styles.card} dark:bg-gray-900 dark:text-white dark:border-gray-700`}>
-            <h2>📱 Mobile App</h2>
-            <p>Access your diary on iOS and Android devices.</p>
+            <h2>📱 Android</h2>
+            <p>Access your diary on Android devices.</p>
           </div>
 
           <div className={`${styles.card} dark:bg-gray-900 dark:text-white dark:border-gray-700`}>
-            <h2>💻 Web Version</h2>
-            <p>Write and manage entries from your browser.</p>
+            <h2>📱 ios</h2>
+            <p>Access your diary on iOS devices(coming soon).</p>
           </div>
         </div>
       </main>
