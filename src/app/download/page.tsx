@@ -1,9 +1,35 @@
-// src/app/download/page.tsx
+'use client'
 
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../page.module.css';
 
 export default function DownloadPage() {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setMessage('Thank you for joining our waitlist!');
+        setEmail('');
+      } else {
+        setMessage('An error occurred. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting email:', error);
+      setMessage('An error occurred. Please try again.');
+    }
+  };
+
   return (
     <div className={`${styles.container} dark:bg-black`}>
       <main className={styles.main}>
@@ -25,9 +51,11 @@ export default function DownloadPage() {
             <li>Receive exclusive updates</li>
             <li>Shape the future of LiveDiaries</li>
           </ul>
-          <form className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
               className="w-full p-2 border rounded dark:bg-gray-800 dark:border-gray-700"
               required
@@ -39,6 +67,7 @@ export default function DownloadPage() {
               Join Waitlist
             </button>
           </form>
+          {message && <p className="mt-4 text-center">{message}</p>}
         </div>
 
         <div className={`${styles.grid} mt-8`}>
@@ -53,7 +82,6 @@ export default function DownloadPage() {
           </div>
         </div>
       </main>
-
     </div>
   );
 }
