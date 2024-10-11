@@ -40,9 +40,6 @@ export default function LandingPage() {
         </button>
       </main>
 
-      <footer className={`${styles.footer} dark:border-gray-800 dark:text-gray-300`}>
-        <p>© 2024 LiveDiaries. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
