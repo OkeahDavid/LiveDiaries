@@ -5,8 +5,8 @@ import { ThemeProvider } from 'next-themes'
 import Navbar from '../components/Navbar'
 
 export const metadata: Metadata = {
-  title: 'LiveDiaries Landing Page',
-  description: 'Welcome to LiveDiaries - Your personal digital diary and book management app',
+  title: 'LiveDiaries',
+  description: 'Welcome to the LiveDiaries Website',
 }
 
 export default function RootLayout({
