@@ -9,6 +9,7 @@ export default function DownloadPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log('Submitting email:', email); // Frontend log
     try {
       const response = await fetch('/api/waitlist', {
         method: 'POST',
@@ -17,6 +18,9 @@ export default function DownloadPage() {
         },
         body: JSON.stringify({ email }),
       });
+
+      const data = await response.json();
+      console.log('Response from server:', data); // Frontend log
 
       if (response.ok) {
         setMessage('Thank you for joining our waitlist!');
