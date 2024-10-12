@@ -3,10 +3,11 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
-  title: 'LiveDiaries Landing Page',
-  description: 'Welcome to LiveDiaries - Your personal digital diary and book management app',
+  title: 'LiveDiaries',
+  description: 'Welcome to the LiveDiaries Website',
 }
 
 export default function RootLayout({
@@ -22,6 +23,7 @@ export default function RootLayout({
           <main className="pt-16">
             {children}
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
