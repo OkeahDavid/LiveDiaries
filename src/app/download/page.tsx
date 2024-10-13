@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import styles from '../page.module.css';
+import PageTransition from '../../components/PageTransition';
+
 
 export default function DownloadPage() {
   const [email, setEmail] = useState('');
@@ -35,6 +37,7 @@ export default function DownloadPage() {
   };
 
   return (
+    <PageTransition>
     <div className={`${styles.container} dark:bg-black`}>
       <main className={styles.main}>
         <h1 className={`${styles.title} dark:text-white`}>
@@ -87,5 +90,6 @@ export default function DownloadPage() {
         </div>
       </main>
     </div>
+    </PageTransition>
   );
 }

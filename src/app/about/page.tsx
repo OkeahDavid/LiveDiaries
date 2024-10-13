@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from '../page.module.css';
 import { FaBook, FaPen, FaMobileAlt, FaLock } from 'react-icons/fa';
+import PageTransition from '../../components/PageTransition';
+
 
 export default function About() {
   return (
+    <PageTransition>
     <div className={`${styles.container} dark:bg-black`}>
       <main className={styles.main}>
         <h1 className={`${styles.title} dark:text-white`}>
@@ -85,5 +88,6 @@ export default function About() {
         </section>
       </main>
     </div>
+    </PageTransition>
   );
 }

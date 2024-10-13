@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from '../page.module.css';
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
+import PageTransition from '../../components/PageTransition';
+
 
 export default function Contact() {
   return (
+    <PageTransition>
     <div className={`${styles.container} dark:bg-black`}>
       <main className={styles.main}>
         <h1 className={`${styles.title} dark:text-white`}>
@@ -43,5 +46,6 @@ export default function Contact() {
         </form>
       </main>
     </div>
+    </PageTransition>
   );
 }
