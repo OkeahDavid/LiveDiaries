@@ -1,103 +1,217 @@
 .container {
-    min-height: 100vh;
-    padding: 0 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.highlight {
+  color: #4869E1;
+}
+
+.description {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #4869E1;
+  border-color: #4869E1;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.ctaButton {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  background-color: #4869E1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.ctaButton:hover {
+  background-color: #0051bb;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 2rem;
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4869E1;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.link:hover {
+  color: #0051bb;
+}
+
+/* About */
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4869E1;
+}
+
+.section {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #4869E1;
+}
+
+.featureList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.featureList li {
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #000; /* Add this to ensure text is visible in light mode */
+}
+
+.dark .featureList li {
+  background-color: #333;
+  color: #fff; /* This ensures text is visible in dark mode */
+}
+
+/* Additional styles that might be needed */
+.aboutGrid {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .aboutGrid {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .main {
-    padding: 5rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
-    text-align: center;
-  }
-  
-  .highlight {
-    color: #4869E1;
-  }
-  
-  .description {
-    text-align: center;
-    line-height: 1.5;
-    font-size: 1.5rem;
-  }
-  
-  .grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin-top: 3rem;
-  }
-  
-  .card {
-    margin: 1rem;
-    flex-basis: 45%;
-    padding: 1.5rem;
-    text-align: left;
-    color: inherit;
-    text-decoration: none;
-    border: 1px solid #eaeaea;
-    border-radius: 10px;
-    transition: color 0.15s ease, border-color 0.15s ease;
-  }
-  
-  .card:hover,
-  .card:focus,
-  .card:active {
-    color: #4869E1;
-    border-color: #4869E1;
-  }
-  
-  .card h2 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-  }
-  
-  .card p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-  
-  .ctaButton {
-    margin-top: 2rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
-    background-color: #4869E1;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.15s ease;
-  }
-  
-  .ctaButton:hover {
-    background-color: #0051bb;
-  }
-  
-  .footer {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
+
+.authorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.authorImage {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4869E1;
+}
