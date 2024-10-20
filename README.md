@@ -23,15 +23,33 @@ LIVEDIARIES/
 │
 ├── .next/
 ├── node_modules/
+├── public/
 ├── src/
 │   └── app/
+│       ├── about/
+│       │   └── page.tsx
+│       ├── api/
+│       │   └── waitlist/
+│       │       └── route.ts
+│       ├── contact/
+│       │   └── page.tsx
+│       ├── download/
+│       │   └── page.tsx
 │       ├── fonts/
+│       ├── components/
+│       │   ├── DarkModeToggle.tsx
+│       │   ├── Footer.tsx
+│       │   ├── Navbar.tsx
+│       │   └── PageTransition.tsx
+│       ├── utils/
+│       │   └── googlesheets.ts
 │       ├── favicon.ico
 │       ├── globals.css
 │       ├── layout.tsx
 │       ├── page.module.css
 │       └── page.tsx
 │
+├── .env.local
 ├── .eslintrc.json
 ├── .gitattributes
 ├── .gitignore
@@ -40,9 +58,6 @@ LIVEDIARIES/
 ├── next.config.mjs
 ├── package-lock.json
 ├── package.json
-├── postcss.config.js
-├── README.md
-├── tailwind.config.ts
 └── tsconfig.json
 ```
 ## 🚀 Getting Started
