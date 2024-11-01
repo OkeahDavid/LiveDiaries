@@ -2,6 +2,9 @@
 
 LiveDiaries is a digital diary and book management application built with Next.js and TypeScript. It allows users to browse, search, and mark favorite books while providing a platform for personal diary entries.
 
+Visit the page here:
+
+https://live-diaries.netlify.app/
 ## 📚 Project Overview
 
 LiveDiaries offers the following features:
