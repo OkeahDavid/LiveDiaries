@@ -23,3 +23,55 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Mobile menu transitions */
+.mobile-menu-enter {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 100ms ease-out, transform 100ms ease-out;
+}
+
+.mobile-menu-enter-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.mobile-menu-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.mobile-menu-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 100ms ease-in, transform 100ms ease-in;
+}
+
+/* Navigation transitions */
+.nav-link-transition {
+  transition: all 200ms ease-in-out;
+}
+
+.mobile-menu-transition {
+  transition: transform 300ms ease-in-out;
+}
+
+/* Mobile menu spacing */
+.mobile-menu-padding {
+  padding: 0.5rem 1rem;
+}
+
+.mobile-nav-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.mobile-nav-item:hover {
+  background-color: rgb(243 244 246);
+}
+
+.dark .mobile-nav-item:hover {
+  background-color: rgb(31 41 55);
+}
