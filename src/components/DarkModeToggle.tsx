@@ -1,12 +1,21 @@
 // src/components/DarkModeToggle.tsx
 'use client'
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { FaBook, FaBookOpen } from 'react-icons/fa';
 
 const DarkModeToggle = () => {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <button
