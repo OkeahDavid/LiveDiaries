@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
-  title: 'LiveDiaries',
+  title: 'Live Diaries',
   description: 'Welcome to the LiveDiaries Website',
 }
 
